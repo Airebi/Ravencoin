@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Copyright (c) 2017 The Raven Core developers
+// Copyright (c) 2019 Duro Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -163,7 +164,7 @@ public:
         pchMessageStart[1] = 0x41; // A
         pchMessageStart[2] = 0x56; // V
         pchMessageStart[3] = 0x4e; // N
-        nDefaultPort = 8767;
+        nDefaultPort = 8789;
         nPruneAfterHeight = 100000;
 
         genesis = CreateGenesisBlock(1514999494, 25023712, 0x1e00ffff, 4, 5000 * COIN);
@@ -271,7 +272,7 @@ public:
         pchMessageStart[1] = 0x56; // V
         pchMessageStart[2] = 0x4E; // N
         pchMessageStart[3] = 0x54; // T
-        nDefaultPort = 18770;
+        nDefaultPort = 18789;
         nPruneAfterHeight = 1000;
 
         uint32_t nGenesisTime = 1537466400;  // Thursday, September 20, 2018 12:00:00 PM GMT-06:00
@@ -441,7 +442,7 @@ public:
         pchMessageStart[1] = 0x52; // R
         pchMessageStart[2] = 0x4F; // O
         pchMessageStart[3] = 0x57; // W
-        nDefaultPort = 18444;
+        nDefaultPort = 18790;
         nPruneAfterHeight = 1000;
 
 // This is used inorder to mine the genesis block. Once found, we can use the nonce and block hash found to create a valid genesis block
